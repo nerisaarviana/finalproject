@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="border-company">
+                <a class="navbar-brand" href="#">CaShoes</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                    <a class="nav-link" href="galeri2.html">GALERI</a>
+                    <a class="nav-link active" href="portofolio.html">PORTOFILIO</a>
+                    <a class="nav-link" href="blog.html">BLOG</a>
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-link" href="todos.html">TODOS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid bg-dark2">
+        <div class="container">
+            <div class="row">
+                <div class="col-9"></div>
+                <div class="col-3">
+                    <h1 class="display-4 bg-success2 text-center">Portofolio</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Garis -->
+    <div class="garis">
+        <div class="row">
+            <div class="col-5">
+                <hr>
+            </div>
+            <div class="col-2">
+                <h3 class="bg-dark2 text-center text-white">PORTOFOLIO</h3>
+            </div>
+            <div class="col-5">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="container-fluid">
+        <div class="text-margin">
+            <h3 class="text-center">HASIL CLEAN</h3>
+        </div>
+		<!-- 
+		<ul id="filters" class="clearfix">
+				 <li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+				 <li><span class="filter" data-filter="app">Website</span></li>
+				 <li><span class="filter" data-filter="card">Logo</span></li>
+				 <li><span class="filter" data-filter="icon">UI Kit</span></li>
+				 <li><span class="filter" data-filter="logo">Photo</span></li>
+				 <li><span class="filter" data-filter="web">App Design</span></li>
+		   </ul>
+		   -->
+		<center>
+			<div id="myBtnContainer">
+			  <button class="btn1 active" onclick="filterSelection('all')"> Show all</button>
+			  <button class="btn1" onclick="filterSelection('fast')"> Cleaning</button>
+			  <button class="btn1" onclick="filterSelection('unyellowing')"> Unyellowing</button>
+			  <button class="btn1" onclick="filterSelection('repair')"> Repair</button>
+			</div>
+		</center>
+		<br><br>
+        <div class="row">
+            <div class="col-4">
+			<div class="filterDiv fast">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/clean1.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Pembersih dan pemmutih sepatu mengandung partikel yang dipoles di dalam, 
+                            membentuk kembali dan memoles Anda selama membersihkan sepatu kulit.</p>
+                    </div>
+                </div>
+            </div>
+			</div>
+            <div class="col-4">
+			<div class="filterDiv fast">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/clean2.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Menggunakan pembersih sepatu caShoes untuk mengembalikan
+                            warna sepatu menjadi lebih putih dan bersih untuk sepatu warna putih menggunakan deep clean.
+                        </p>
+                    </div>
+                </div>
+            </div>
+			</div>
+            <div class="col-4">
+			<div class="filterDiv fast">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/clean3.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Cara terbaik untuk membersihkan sepatu Anda! 
+                            Mereka akan terlihat seperti baru! 
+                            Saya yakin Anda bahkan sudah memiliki produk ini di lemari kamar Anda!</p>
+                    </div>
+                </div>
+            </div>
+			</div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+			<div class="filterDiv unyellowing">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/portofolio1.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Menggunakan cat acrylic yang memiliki karakter tidak membuat sepatu menjadi kaku
+                            dan keras ketika sudah di aplikasikan pada sepatu.</p>
+                    </div>
+                </div>
+            </div>
+			</div>
+            <div class="col-4">
+			<div class="filterDiv unyellowing">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/unyellowing2.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Menggunakan cat acrylic yang memiliki karakter tidak membuat sepatu menjadi kaku
+                            dan keras ketika sudah di aplikasikan pada sepatu anda.</p>
+                    </div>
+                </div>
+            </div>
+			</div>
+            <div class="col-4">
+			<div class="filterDiv unyellowing">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/unyellowing3.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Menggunakan cat acrylic yang memiliki karakter tidak membuat sepatu menjadi kaku
+                            dan keras ketika sudah di aplikasikan pada sepatu anda.</p>
+                    </div>
+                </div>
+            </div>
+			</div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+			<div class="filterDiv repair">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/repaint2.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Pengecatan ulang sepatu, 
+                            terutama untuk sepatu yang warnanya sudah pudar, atau ingin mengganti warna sepatu.</p>
+                    </div>
+                </div>
+            </div>
+			</div>
+            <div class="col-4">
+			<div class="filterDiv repair">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/recolour1.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Mengubah warna sepatu. engan warna yang berbeda pada warna awal sepatu.
+                             Dapat merubah tampilan sepatu kalian menjadi baru</p>
+                    </div>
+                </div>
+            </div>
+			</div>
+            <div class="col-4">
+			<div class="filterDiv repair">
+                <div class="card bg-primary portofolio">
+                    <a href="#"><img src="assets/repaint1.jpg" height="200" class="card-img-top img-hover" alt=""></a>
+                    <div class="card-body bg-dark2">
+                        <p class="card-text text-light">Pengecatan ulang sepatu,
+                             terutama untuk sepatu yang warnanya sudah pudar, atau ingin mengganti warna sepatu.</p>
+                    </div>
+                </div>
+            </div>
+			</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-dark2">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="footer-text text-light">
+                        <h3>CONTACT INFO</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="assets/address.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <p class="text-light">Jl. Singosari Raya, Tangerang</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="assets/email.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <p class="text-light">chashoes@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="assets/phone.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <p class="text-light">081807057544</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="footer-text text-light">
+                    </div>
+                    <p class="text-light">
+                        kami akan selalu berusaha untuk memberikan pelayanan terbaik untuk sepatumu.
+                        Jadi, jangan ragu untuk datang ke kami.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <p class="text-light footer-text2 text-center">&copy; Copyright - Nerisa Arviana 2020</p>
+        </div>
+    </div>
+</body>
+<script src="js/scriptPort.js"></script>
+</html>
